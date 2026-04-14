@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History Explorer — Random History Sections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo-icon">🏛️</span>
+      <div>
+        <h1 class="site-title">History Explorer</h1>
+        <p class="site-subtitle">Discover a random moment from human history</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="card" id="history-card">
+      <div class="card-era" id="card-era"></div>
+      <h2 class="card-title" id="card-title"></h2>
+      <div class="card-meta">
+        <span class="card-period" id="card-period"></span>
+        <span class="card-region" id="card-region"></span>
+      </div>
+      <p class="card-body" id="card-body"></p>
+      <div class="card-facts">
+        <h3 class="facts-heading">Key Facts</h3>
+        <ul class="facts-list" id="facts-list"></ul>
+      </div>
+      <div class="card-quote" id="card-quote-wrapper">
+        <blockquote id="card-quote"></blockquote>
+        <cite id="card-quote-author"></cite>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button class="btn-random" id="btn-random" aria-label="Show another random history section">
+        🎲 Show Another Section
+      </button>
+      <p class="counter-text">
+        Section <span id="current-index">1</span> of <span id="total-count">0</span>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>History Explorer &mdash; exploring the past, one section at a time.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
